@@ -65,14 +65,3 @@ for ind in onto.individuals():
     print(ind.name)
 ```
 
-## Contributing
-
-If you wish to contribute to this project, please fork the repository and create a pull request with your changes. Ensure you adhere to the coding standards and include appropriate documentation.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Contact
-
-For any questions or inquiries, please contact [Your Name] at [Your Email].
