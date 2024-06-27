@@ -1,0 +1,850 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/your-ontology/ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/your-ontology/ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/your-ontology/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AdministrativeControls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdvancedPersistentThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Assets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContinuousMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CorrectiveMeasures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyberSecurity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyberThreats"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CyberVulnerabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DenialOfService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DetectiveMeasures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employees"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalStakeholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HardwareVulnerabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanFactors"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ITDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImpactAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentRecovery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentReporting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncidentResponse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntellectualProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalStakeholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LikelihoodAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Malware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NetworkInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PeriodicReview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phishing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalAssets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalControls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreventiveMeasures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegulatoryBodies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reporting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskCommunication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskManagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskMitigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RiskMonitoring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SecurityControls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareVulnerabilities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StakeholderEngagement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stakeholders"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suppliers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TechnicalControls"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThreatAssessment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VulnerabilityAssessment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assesses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#conductedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mitigates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssessmentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssessmentFrequency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssessmentMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssessmentResults"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssetLocation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssetOwner"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAssetValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEffectiveness"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasImplementationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIncidentDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIncidentResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasIncidentType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMitigationStrategy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStakeholderContact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStakeholderRole"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThreatImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThreatSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasThreatType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVulnerabilityMitigation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVulnerabilitySeverity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVulnerabilityType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhishingInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HumanFactorsInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InformationAssetInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PreventiveMeasuresInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncidentResponseInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IncidentDetectionInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhysicalAssetInstance1"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MalwareInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExternalStakeholderInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoftwareVulnerabilityInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternalStakeholderInstance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DetectiveMeasuresInstance1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdministrativeControls"/>
+        <Class IRI="#SecurityControls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdvancedPersistentThreats"/>
+        <Class IRI="#CyberThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContinuousMonitoring"/>
+        <Class IRI="#RiskMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CorrectiveMeasures"/>
+        <Class IRI="#RiskMitigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Customers"/>
+        <Class IRI="#ExternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyberThreats"/>
+        <Class IRI="#CyberSecurity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CyberVulnerabilities"/>
+        <Class IRI="#CyberSecurity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Data"/>
+        <Class IRI="#InformationAssets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DenialOfService"/>
+        <Class IRI="#CyberThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DetectiveMeasures"/>
+        <Class IRI="#RiskMitigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employees"/>
+        <Class IRI="#InternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalStakeholders"/>
+        <Class IRI="#Stakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#PhysicalAssets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HardwareVulnerabilities"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanAssets"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanFactors"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ITDepartment"/>
+        <Class IRI="#InternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactAssessment"/>
+        <Class IRI="#RiskAssessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentDetection"/>
+        <Class IRI="#IncidentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentRecovery"/>
+        <Class IRI="#IncidentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentReporting"/>
+        <Class IRI="#IncidentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncidentResponse"/>
+        <Class IRI="#IncidentManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationAssets"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntellectualProperty"/>
+        <Class IRI="#InformationAssets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalStakeholders"/>
+        <Class IRI="#Stakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LikelihoodAssessment"/>
+        <Class IRI="#RiskAssessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Malware"/>
+        <Class IRI="#CyberThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Management"/>
+        <Class IRI="#InternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NetworkInfrastructure"/>
+        <Class IRI="#PhysicalAssets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PeriodicReview"/>
+        <Class IRI="#RiskMonitoring"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Personnel"/>
+        <Class IRI="#HumanAssets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phishing"/>
+        <Class IRI="#CyberThreats"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalAssets"/>
+        <Class IRI="#Assets"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalControls"/>
+        <Class IRI="#SecurityControls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreventiveMeasures"/>
+        <Class IRI="#RiskMitigation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegulatoryBodies"/>
+        <Class IRI="#ExternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reporting"/>
+        <Class IRI="#RiskCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskAssessment"/>
+        <Class IRI="#RiskManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskCommunication"/>
+        <Class IRI="#RiskManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskMitigation"/>
+        <Class IRI="#RiskManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RiskMonitoring"/>
+        <Class IRI="#RiskManagement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SecurityControls"/>
+        <Class IRI="#CyberSecurity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareVulnerabilities"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StakeholderEngagement"/>
+        <Class IRI="#RiskCommunication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suppliers"/>
+        <Class IRI="#ExternalStakeholders"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TechnicalControls"/>
+        <Class IRI="#SecurityControls"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThreatAssessment"/>
+        <Class IRI="#RiskAssessment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VulnerabilityAssessment"/>
+        <Class IRI="#RiskAssessment"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#RiskMitigation"/>
+        <NamedIndividual IRI="#DetectiveMeasuresInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stakeholders"/>
+        <NamedIndividual IRI="#ExternalStakeholderInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CyberVulnerabilities"/>
+        <NamedIndividual IRI="#HumanFactorsInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncidentManagement"/>
+        <NamedIndividual IRI="#IncidentDetectionInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IncidentManagement"/>
+        <NamedIndividual IRI="#IncidentResponseInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assets"/>
+        <NamedIndividual IRI="#InformationAssetInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stakeholders"/>
+        <NamedIndividual IRI="#InternalStakeholderInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CyberThreats"/>
+        <NamedIndividual IRI="#MalwareInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CyberThreats"/>
+        <NamedIndividual IRI="#PhishingInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Assets"/>
+        <NamedIndividual IRI="#PhysicalAssetInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiskMitigation"/>
+        <NamedIndividual IRI="#PreventiveMeasuresInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CyberVulnerabilities"/>
+        <NamedIndividual IRI="#SoftwareVulnerabilityInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiskAssessment"/>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RiskAssessment"/>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEffectiveness"/>
+        <NamedIndividual IRI="#DetectiveMeasuresInstance1"/>
+        <Literal>Moderate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasImplementationDate"/>
+        <NamedIndividual IRI="#DetectiveMeasuresInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-04-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMitigationStrategy"/>
+        <NamedIndividual IRI="#DetectiveMeasuresInstance1"/>
+        <Literal>Intrusion Detection System</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStakeholderContact"/>
+        <NamedIndividual IRI="#ExternalStakeholderInstance1"/>
+        <Literal>auditor@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStakeholderRole"/>
+        <NamedIndividual IRI="#ExternalStakeholderInstance1"/>
+        <Literal>Regulatory Auditor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilityMitigation"/>
+        <NamedIndividual IRI="#HumanFactorsInstance1"/>
+        <Literal>Awareness Training</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilitySeverity"/>
+        <NamedIndividual IRI="#HumanFactorsInstance1"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilityType"/>
+        <NamedIndividual IRI="#HumanFactorsInstance1"/>
+        <Literal>Insider Threat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentDate"/>
+        <NamedIndividual IRI="#IncidentDetectionInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-05-10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentResolution"/>
+        <NamedIndividual IRI="#IncidentDetectionInstance1"/>
+        <Literal>Access Revoked</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentType"/>
+        <NamedIndividual IRI="#IncidentDetectionInstance1"/>
+        <Literal>Unauthorized Access</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentDate"/>
+        <NamedIndividual IRI="#IncidentResponseInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-06-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentResolution"/>
+        <NamedIndividual IRI="#IncidentResponseInstance1"/>
+        <Literal>Data Recovery and Notification</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasIncidentType"/>
+        <NamedIndividual IRI="#IncidentResponseInstance1"/>
+        <Literal>Data Breach</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetLocation"/>
+        <NamedIndividual IRI="#InformationAssetInstance1"/>
+        <Literal>Data Center</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetOwner"/>
+        <NamedIndividual IRI="#InformationAssetInstance1"/>
+        <Literal>IT Department</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetValue"/>
+        <NamedIndividual IRI="#InformationAssetInstance1"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStakeholderContact"/>
+        <NamedIndividual IRI="#InternalStakeholderInstance1"/>
+        <Literal>it.security@example.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStakeholderRole"/>
+        <NamedIndividual IRI="#InternalStakeholderInstance1"/>
+        <Literal>IT Security Specialist</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatImpact"/>
+        <NamedIndividual IRI="#MalwareInstance1"/>
+        <Literal>Data Encryption</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatSource"/>
+        <NamedIndividual IRI="#MalwareInstance1"/>
+        <Literal>External Attacker</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatType"/>
+        <NamedIndividual IRI="#MalwareInstance1"/>
+        <Literal>Ransomware</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatImpact"/>
+        <NamedIndividual IRI="#PhishingInstance1"/>
+        <Literal>Credential Theft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatSource"/>
+        <NamedIndividual IRI="#PhishingInstance1"/>
+        <Literal>Social Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasThreatType"/>
+        <NamedIndividual IRI="#PhishingInstance1"/>
+        <Literal>Spear Phishing</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetLocation"/>
+        <NamedIndividual IRI="#PhysicalAssetInstance1"/>
+        <Literal>Head Office</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetOwner"/>
+        <NamedIndividual IRI="#PhysicalAssetInstance1"/>
+        <Literal>Facilities Management</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssetValue"/>
+        <NamedIndividual IRI="#PhysicalAssetInstance1"/>
+        <Literal>Medium</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEffectiveness"/>
+        <NamedIndividual IRI="#PreventiveMeasuresInstance1"/>
+        <Literal>High</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasImplementationDate"/>
+        <NamedIndividual IRI="#PreventiveMeasuresInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-03-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasMitigationStrategy"/>
+        <NamedIndividual IRI="#PreventiveMeasuresInstance1"/>
+        <Literal>Firewall Implementation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilityMitigation"/>
+        <NamedIndividual IRI="#SoftwareVulnerabilityInstance1"/>
+        <Literal>Input Validation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilitySeverity"/>
+        <NamedIndividual IRI="#SoftwareVulnerabilityInstance1"/>
+        <Literal>Critical</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasVulnerabilityType"/>
+        <NamedIndividual IRI="#SoftwareVulnerabilityInstance1"/>
+        <Literal>SQL Injection</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentDate"/>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-02-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentFrequency"/>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+        <Literal>Quarterly</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentMethod"/>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+        <Literal>Manual Review</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentResults"/>
+        <NamedIndividual IRI="#ThreatAssessmentInstance1"/>
+        <Literal>Medium Risk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentDate"/>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-01-15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentFrequency"/>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+        <Literal>Annual</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentMethod"/>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+        <Literal>Automated Scan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasAssessmentResults"/>
+        <NamedIndividual IRI="#VulnerabilityAssessmentInstance1"/>
+        <Literal>High Risk</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssessmentDate"/>
+        <Class IRI="#RiskAssessment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssessmentFrequency"/>
+        <Class IRI="#RiskAssessment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssessmentMethod"/>
+        <Class IRI="#RiskAssessment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssessmentResults"/>
+        <Class IRI="#RiskAssessment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssetLocation"/>
+        <Class IRI="#Assets"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssetOwner"/>
+        <Class IRI="#Assets"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAssetValue"/>
+        <Class IRI="#Assets"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEffectiveness"/>
+        <Class IRI="#RiskMitigation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasImplementationDate"/>
+        <Class IRI="#RiskMitigation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIncidentDate"/>
+        <Class IRI="#IncidentManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIncidentResolution"/>
+        <Class IRI="#IncidentManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasIncidentType"/>
+        <Class IRI="#IncidentManagement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasMitigationStrategy"/>
+        <Class IRI="#RiskMitigation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStakeholderContact"/>
+        <Class IRI="#Stakeholders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStakeholderRole"/>
+        <Class IRI="#Stakeholders"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasThreatImpact"/>
+        <Class IRI="#CyberThreats"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasThreatSource"/>
+        <Class IRI="#CyberThreats"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasThreatType"/>
+        <Class IRI="#CyberThreats"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVulnerabilityMitigation"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVulnerabilitySeverity"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVulnerabilityType"/>
+        <Class IRI="#CyberVulnerabilities"/>
+    </DataPropertyDomain>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

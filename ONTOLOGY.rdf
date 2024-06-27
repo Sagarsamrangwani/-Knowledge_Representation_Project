@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/your-ontology/ontology#"
+     xml:base="http://www.semanticweb.org/your-ontology/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/your-ontology/ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#affects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#affects"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#assesses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#assesses"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#causedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#causedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#conductedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#conductedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#implementedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#implementedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#involves -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#involves"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#mitigates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#mitigates"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssessmentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssessmentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssessmentFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssessmentFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssessmentMethod -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssessmentMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssessmentResults -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssessmentResults">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssetLocation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssetLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssetOwner -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssetOwner">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasAssetValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasAssetValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasEffectiveness -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasEffectiveness">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasImplementationDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasImplementationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasIncidentDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasIncidentDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasIncidentResolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasIncidentResolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasIncidentType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasIncidentType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasMitigationStrategy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasMitigationStrategy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasStakeholderContact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasStakeholderContact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasStakeholderRole -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasStakeholderRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasThreatImpact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasThreatImpact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasThreatSource -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasThreatSource">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasThreatType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasThreatType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilityMitigation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilityMitigation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilitySeverity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilitySeverity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilityType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/your-ontology/ontology#hasVulnerabilityType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#AdministrativeControls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#AdministrativeControls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#SecurityControls"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#AdvancedPersistentThreats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#AdvancedPersistentThreats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Assets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ContinuousMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#ContinuousMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMonitoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#CorrectiveMeasures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#CorrectiveMeasures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Customers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Customers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#CyberSecurity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#CyberSecurity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#CyberThreats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#CyberThreats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Data">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#InformationAssets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#DenialOfService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#DenialOfService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#DetectiveMeasures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#DetectiveMeasures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Employees -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Employees">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#InternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Hardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Hardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#PhysicalAssets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#HardwareVulnerabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#HardwareVulnerabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#HumanAssets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#HumanAssets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#HumanFactors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#HumanFactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ITDepartment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#ITDepartment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#InternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ImpactAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#ImpactAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentDetection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentRecovery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentRecovery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentReporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentReporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentResponse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentResponse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#InformationAssets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#InformationAssets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IntellectualProperty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#IntellectualProperty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#InformationAssets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#InternalStakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#InternalStakeholders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#LikelihoodAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#LikelihoodAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Malware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Malware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#InternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#NetworkInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#NetworkInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#PhysicalAssets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PeriodicReview -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#PeriodicReview">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMonitoring"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Personnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Personnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#HumanAssets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Phishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Phishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PhysicalAssets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#PhysicalAssets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PhysicalControls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#PhysicalControls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#SecurityControls"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PreventiveMeasures -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#PreventiveMeasures">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RegulatoryBodies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RegulatoryBodies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Reporting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Reporting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskCommunication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RiskAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RiskCommunication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RiskCommunication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RiskManagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RiskManagement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RiskMitigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#RiskMonitoring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#RiskMonitoring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskManagement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#SecurityControls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#SecurityControls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberSecurity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#SoftwareVulnerabilities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#SoftwareVulnerabilities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#StakeholderEngagement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#StakeholderEngagement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskCommunication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Stakeholders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#Suppliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#Suppliers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholders"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#TechnicalControls -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#TechnicalControls">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#SecurityControls"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ThreatAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#ThreatAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#VulnerabilityAssessment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/your-ontology/ontology#VulnerabilityAssessment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#DetectiveMeasuresInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#DetectiveMeasuresInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+        <hasEffectiveness>Moderate</hasEffectiveness>
+        <hasImplementationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-04-15</hasImplementationDate>
+        <hasMitigationStrategy>Intrusion Detection System</hasMitigationStrategy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholderInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#ExternalStakeholderInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+        <hasStakeholderContact>auditor@example.com</hasStakeholderContact>
+        <hasStakeholderRole>Regulatory Auditor</hasStakeholderRole>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#HumanFactorsInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#HumanFactorsInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+        <hasVulnerabilityMitigation>Awareness Training</hasVulnerabilityMitigation>
+        <hasVulnerabilitySeverity>High</hasVulnerabilitySeverity>
+        <hasVulnerabilityType>Insider Threat</hasVulnerabilityType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentDetectionInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentDetectionInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+        <hasIncidentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-10</hasIncidentDate>
+        <hasIncidentResolution>Access Revoked</hasIncidentResolution>
+        <hasIncidentType>Unauthorized Access</hasIncidentType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#IncidentResponseInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#IncidentResponseInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#IncidentManagement"/>
+        <hasIncidentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-05</hasIncidentDate>
+        <hasIncidentResolution>Data Recovery and Notification</hasIncidentResolution>
+        <hasIncidentType>Data Breach</hasIncidentType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#InformationAssetInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#InformationAssetInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+        <hasAssetLocation>Data Center</hasAssetLocation>
+        <hasAssetOwner>IT Department</hasAssetOwner>
+        <hasAssetValue>High</hasAssetValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#InternalStakeholderInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#InternalStakeholderInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Stakeholders"/>
+        <hasStakeholderContact>it.security@example.com</hasStakeholderContact>
+        <hasStakeholderRole>IT Security Specialist</hasStakeholderRole>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#MalwareInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#MalwareInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+        <hasThreatImpact>Data Encryption</hasThreatImpact>
+        <hasThreatSource>External Attacker</hasThreatSource>
+        <hasThreatType>Ransomware</hasThreatType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PhishingInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#PhishingInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberThreats"/>
+        <hasThreatImpact>Credential Theft</hasThreatImpact>
+        <hasThreatSource>Social Engineering</hasThreatSource>
+        <hasThreatType>Spear Phishing</hasThreatType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PhysicalAssetInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#PhysicalAssetInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#Assets"/>
+        <hasAssetLocation>Head Office</hasAssetLocation>
+        <hasAssetOwner>Facilities Management</hasAssetOwner>
+        <hasAssetValue>Medium</hasAssetValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#PreventiveMeasuresInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#PreventiveMeasuresInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskMitigation"/>
+        <hasEffectiveness>High</hasEffectiveness>
+        <hasImplementationDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-03-01</hasImplementationDate>
+        <hasMitigationStrategy>Firewall Implementation</hasMitigationStrategy>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#SoftwareVulnerabilityInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#SoftwareVulnerabilityInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#CyberVulnerabilities"/>
+        <hasVulnerabilityMitigation>Input Validation</hasVulnerabilityMitigation>
+        <hasVulnerabilitySeverity>Critical</hasVulnerabilitySeverity>
+        <hasVulnerabilityType>SQL Injection</hasVulnerabilityType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#ThreatAssessmentInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#ThreatAssessmentInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+        <hasAssessmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-20</hasAssessmentDate>
+        <hasAssessmentFrequency>Quarterly</hasAssessmentFrequency>
+        <hasAssessmentMethod>Manual Review</hasAssessmentMethod>
+        <hasAssessmentResults>Medium Risk</hasAssessmentResults>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/your-ontology/ontology#VulnerabilityAssessmentInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/your-ontology/ontology#VulnerabilityAssessmentInstance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/your-ontology/ontology#RiskAssessment"/>
+        <hasAssessmentDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-15</hasAssessmentDate>
+        <hasAssessmentFrequency>Annual</hasAssessmentFrequency>
+        <hasAssessmentMethod>Automated Scan</hasAssessmentMethod>
+        <hasAssessmentResults>High Risk</hasAssessmentResults>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
